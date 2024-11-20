@@ -10,6 +10,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--navbar-->
@@ -39,7 +41,7 @@
       <p class="mb-5 text-lg font-normal">
         Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
       </p>
-      <button class="btn  text-black bg-[#1DD100] border-none">Buy Tickets</button>
+      <button onclick="btn()" class="btn  text-black bg-[#1DD100] border-none">Buy Tickets</button>
     </div>
   </div>
 </div>
@@ -125,7 +127,7 @@
       </section>
 
       <!--seat-->
-      <section class="bg-[#F7F8F8] py-28 px-24 border-t-2 border-[#1DD100] rounded-t-3xl mt-20">
+      <section class="bg-[#F7F8F8] py-28 px-24 border-t-2 border-[#1DD100] rounded-t-3xl mt-20 ticket">
         <!--tickets details-->
         <section class="flex-col items-center justify-center text-center ">
             <h2 class="text-4xl font-bold pb-5" style="font-family: raleway;">P.H Paribahan</h2>
@@ -173,15 +175,156 @@
             </div>
         </section>
 
-        <!--seat book-->
-        <section>
+         <!--ticket center-->
+      <section class="flex justify-center mt-8 gap-5 py-5  bg-white rounded-3xl">
+        <!--left side-->
+        <div class="bg-white border-r-2 border-dashed border-[#03071233] p-5">
+          <h6 class="font-semibold text-2xl border-b-2 border-dashed border-[#03071233] p-3">Select Your Seat</h6>
+          <div class="font-medium text-lg flex  justify-between   border-b-2 border-dashed border-[#03071233] p-3">
+            <p class="flex"><img src="images/seat-gray.png" alt=""> Available</p>
+            <p class="flex"><img src="images/seat-green-filled.png" alt=""> Selected</p>
+          </div>
+          
+          <button class="bg-[#0307121a] my-5 text-end ml-96 justify-center items-center   py-1 px-7 rounded-lg" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333" stroke="#030712" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></button>
+          <!--seat-->
+          <div class="flex">
 
-        </section>
+            <!--abc-->
+            <div>
+              <ul class="font-medium text-lg text-[#03071280] text-center   leading-10  gap-10 flex-col mx-3  ">
+                <li class="py-3 ">A</li>
+                <li class="py-3 ">B</li>
+                <li class="py-3 " >C</li>
+                <li class="py-3 ">D</li>
+                <li class="py-3 ">E</li>
+                <li class="py-3 ">F</li>
+                <li class="py-3 ">G</li>
+                <li class="py-3 ">H</li>
+                <li class="py-3 ">I</li>
+                <li class="py-3 ">J</li>
+              </ul>
+            </div>
+
+            <!--seat left-->
+            <div class="flex mr-10">
+              <div class="font-medium text-lg text-[#03071280] leading-10  gap-3 flex-col mx-3 text-center ">
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">A1</button><br>
+               <button  class=" my-3  bg-[#F7F8F8] px-8 rounded-lg">B1</button><br>
+               <button  class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">C1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">D1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">E1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">F1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">G1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">H1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">I1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">J1</button><br>
+              </div>
+
+              <div class="font-medium text-lg text-[#03071280] leading-10  gap-3 flex-col mx-3 text-center ">
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">A2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">B2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">C2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">D2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">E2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">F2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">G2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">H2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">I2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">J2</button><br>
+              </div>
+            </div>
+
+            <!--seat right-->
+            <div class="flex gap-">
+              <div class="font-medium text-lg text-[#03071280] leading-10  gap-3 flex-col mx-3 text-center ">
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">A1</button><br>
+               <button  class=" my-3  bg-[#F7F8F8] px-8 rounded-lg">B1</button><br>
+               <button  class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">C1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">D1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">E1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">F1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">G1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">H1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">I1</button><br>
+               <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">J1</button><br>
+              </div>
+
+              <div class="font-medium text-lg text-[#03071280] leading-10  gap-3 flex-col mx-3 text-center ">
+
+
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">A2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">B2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">C2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">D2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">E2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">F2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">G2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">H2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">I2</button><br>
+                <button class="my-3  bg-[#F7F8F8]  px-8 rounded-lg">J2</button><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--right side-->
+        <div class="bg-white p-5 ">
+          <h6 class="font-semibold text-2xl border-b-2 border-dashed border-[#03071233] p-3">Select Your Seat</h6>
+          <div class="bg-[#F7F8F8] rounded-xl my-5 p-3">
+            <div class="font-medium text-lg text-[#030712] border-b-2 border-dashed border-[#03071233] p-3 flex justify-between ">
+              <p >Seat <sup class="bg-[#1DD100] px-2 rounded-md font-bold text-xs"><span>0</span></sup></p>
+              <p>class</p>
+              <p>Price</p>
+            </div>
+            <div class="font-normal text-lg border-b-2  border-[#03071233] p-3 flex justify-between  text-[#03071299]">
+              <p><span>C2</span></p>
+              <p>Economoy</p>
+              <p>550</p>
+            </div>
+            <div class="flex justify-between font-medium text-lg text-[#030712] p-2">
+              <p>Total Price</p>
+              <p>BDT <span>550</span></p>
+            </div>
+            <div>
+              <label for="text">
+                <input class="pr-16 py-2 pl-2 text-left font-normal text-lg rounded-xl text-[#03071266]" id="text" placeholder="Have any copupon?" ><button class="font-semibold text-lg bg-[#1DD100] text-white p-1 rounded-lg">Apply</button>
+            </label>
+            </div>
+
+            <div class="flex justify-between p-3 font-medium text-lg">
+              <p>Grand Total</p>
+              <p>BDT<Span> 550</Span></p>
+            </div>
+        </div>
+        <p class="font-semibold text-base">Passenger Name*</p>
+        <label for="name">
+          <input class="text-base font-normal border border-[#0307121a] pl-4 py-2 pr-40 my-2 rounded-lg"  id="name " placeholder="Enter your name">
+        </label>
+
+        <p class="font-semibold text-base">Phone Number*</p>
+        <label for="number">
+          <input class="text-base font-normal border border-[#0307121a] pl-4 py-2 pr-40 my-2 rounded-lg" id="number" placeholder="Enter your phone number">
+      </label>
+
+      <p class="font-semibold text-base">Email ID</p>
+      <label for="email">
+        <input class="text-base font-normal border border-[#0307121a] pl-4 py-2 pr-40 my-2 rounded-lg" id="email" placeholder="Enter your email id">
+    </label>
+    <br>
+    <button class="bg-[#1DD100] px-40 py-1 rounded-lg my-2 text-white font-extrabold text-xl" style="font-family: raleway;">Next</button>
+
+    <div class="flex justify-between font-normal text-base text-[#03071299] ">
+      <p>Terms and Conditions</p>
+      <p>Cancellation Policy</p>
+    </div>
+        </div>
       </section>
-      </main> 
+      </section>
 
+       
       <!--footer-->
-    <footer class="bg-black p-20">
+      <footer class="bg-black p-20">
         <div class="flex justify-between pb-6" >
             <div class="">   
                 <h5 class="text-white font-extrabold text-4xl pb-3" style="font-family: raleway;">P-Ticket</h5>
@@ -211,8 +354,8 @@
                 </ul>
             </div>
             </div>
-
-        
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
